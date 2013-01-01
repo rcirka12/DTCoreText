@@ -28,6 +28,14 @@
 	</dict>
 	<dict>
 		<key>Description</key>
+		<string>Demonstrates borders usage</string>
+		<key>File</key>
+		<string>borders.html</string>
+		<key>Title</key>
+		<string>Borders</string>
+	</dict>
+	<dict>
+		<key>Description</key>
 		<string>Demonstrates setting of Line Height</string>
 		<key>File</key>
 		<string>LineHeight.html</string>

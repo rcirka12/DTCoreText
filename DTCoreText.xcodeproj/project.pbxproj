@@ -30,6 +30,27 @@
 		36F8CECE1593AA3D00E9599C /* DTHTMLAttributedStringBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A7949A4514CAF58C00A8CCDE /* DTHTMLAttributedStringBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36F8CECF1593AA4200E9599C /* DTHTMLAttributedStringBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A7949A4514CAF58C00A8CCDE /* DTHTMLAttributedStringBuilder.h */; };
 		3D710A1816662DFD008EFC73 /* libDTFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E383B9160DFEA800CF72D6 /* libDTFoundation.a */; };
+		7F6AAF3F16926AB900C8892F /* borders.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F6AAF3E16926AB900C8892F /* borders.html */; };
+		7F6AAF5A169272F600C8892F /* DTHTMLElementBorderStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6AAF58169272F500C8892F /* DTHTMLElementBorderStyle.h */; };
+		7F6AAF5B169272F600C8892F /* DTHTMLElementBorderStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6AAF58169272F500C8892F /* DTHTMLElementBorderStyle.h */; };
+		7F6AAF5C169272F600C8892F /* DTHTMLElementBorderStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6AAF58169272F500C8892F /* DTHTMLElementBorderStyle.h */; };
+		7F6AAF5D169272F600C8892F /* DTHTMLElementBorderStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6AAF58169272F500C8892F /* DTHTMLElementBorderStyle.h */; };
+		7F6AAF5E169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF59169272F500C8892F /* DTHTMLElementBorderStyle.m */; };
+		7F6AAF5F169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF59169272F500C8892F /* DTHTMLElementBorderStyle.m */; };
+		7F6AAF60169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF59169272F500C8892F /* DTHTMLElementBorderStyle.m */; };
+		7F6AAF61169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF59169272F500C8892F /* DTHTMLElementBorderStyle.m */; };
+		7F6AAF62169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF59169272F500C8892F /* DTHTMLElementBorderStyle.m */; };
+		7F6AAF63169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF59169272F500C8892F /* DTHTMLElementBorderStyle.m */; };
+		7F6AAF661692730F00C8892F /* DTHTMLElementBorderAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6AAF641692730E00C8892F /* DTHTMLElementBorderAttributes.h */; };
+		7F6AAF671692730F00C8892F /* DTHTMLElementBorderAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6AAF641692730E00C8892F /* DTHTMLElementBorderAttributes.h */; };
+		7F6AAF681692730F00C8892F /* DTHTMLElementBorderAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6AAF641692730E00C8892F /* DTHTMLElementBorderAttributes.h */; };
+		7F6AAF691692730F00C8892F /* DTHTMLElementBorderAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6AAF641692730E00C8892F /* DTHTMLElementBorderAttributes.h */; };
+		7F6AAF6A1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF651692730F00C8892F /* DTHTMLElementBorderAttributes.m */; };
+		7F6AAF6B1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF651692730F00C8892F /* DTHTMLElementBorderAttributes.m */; };
+		7F6AAF6C1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF651692730F00C8892F /* DTHTMLElementBorderAttributes.m */; };
+		7F6AAF6D1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF651692730F00C8892F /* DTHTMLElementBorderAttributes.m */; };
+		7F6AAF6E1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF651692730F00C8892F /* DTHTMLElementBorderAttributes.m */; };
+		7F6AAF6F1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AAF651692730F00C8892F /* DTHTMLElementBorderAttributes.m */; };
 		A704C93A13901FDB0045CFC6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A704C93913901FDB0045CFC6 /* ImageIO.framework */; };
 		A7081EA415036460002987F1 /* DTTextBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = A7081EA11503645F002987F1 /* DTTextBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7081EA515036460002987F1 /* DTTextBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A7081EA215036460002987F1 /* DTTextBlock.m */; };
@@ -756,6 +777,11 @@
 		1D6058910D05DD3D006BFB54 /* RTDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F6AAF3E16926AB900C8892F /* borders.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = borders.html; sourceTree = "<group>"; };
+		7F6AAF58169272F500C8892F /* DTHTMLElementBorderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTHTMLElementBorderStyle.h; sourceTree = "<group>"; };
+		7F6AAF59169272F500C8892F /* DTHTMLElementBorderStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTHTMLElementBorderStyle.m; sourceTree = "<group>"; };
+		7F6AAF641692730E00C8892F /* DTHTMLElementBorderAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTHTMLElementBorderAttributes.h; sourceTree = "<group>"; };
+		7F6AAF651692730F00C8892F /* DTHTMLElementBorderAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTHTMLElementBorderAttributes.m; sourceTree = "<group>"; };
 		A704C93913901FDB0045CFC6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A7081EA11503645F002987F1 /* DTTextBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTextBlock.h; sourceTree = "<group>"; };
 		A7081EA215036460002987F1 /* DTTextBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTextBlock.m; sourceTree = "<group>"; };
@@ -1213,6 +1239,7 @@
 				A78C241015073BC50045651E /* TextBoxes.html */,
 				A72C15C61592FAF70064A67F /* CoreTextIssues.html */,
 				A73885A41606E9B2001D60C4 /* EmojiTest.html */,
+				7F6AAF3E16926AB900C8892F /* borders.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1309,6 +1336,10 @@
 				A7EB849C168B3E9D00D686B7 /* DTHTMLParserNode.m */,
 				A7EB84A5168B3EC000D686B7 /* DTHTMLParserTextNode.h */,
 				A7EB84A6168B3EC000D686B7 /* DTHTMLParserTextNode.m */,
+				7F6AAF58169272F500C8892F /* DTHTMLElementBorderStyle.h */,
+				7F6AAF59169272F500C8892F /* DTHTMLElementBorderStyle.m */,
+				7F6AAF641692730E00C8892F /* DTHTMLElementBorderAttributes.h */,
+				7F6AAF651692730F00C8892F /* DTHTMLElementBorderAttributes.m */,
 			);
 			name = Parsing;
 			sourceTree = "<group>";
@@ -1463,6 +1494,8 @@
 				A7EB84D5168B9B1300D686B7 /* DTHTMLElementHR.h in Headers */,
 				A7EB84E5168C657100D686B7 /* DTHTMLElementLI.h in Headers */,
 				A7EB8539168FA33500D686B7 /* DTHTMLElementStylesheet.h in Headers */,
+				7F6AAF5A169272F600C8892F /* DTHTMLElementBorderStyle.h in Headers */,
+				7F6AAF661692730F00C8892F /* DTHTMLElementBorderAttributes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1519,6 +1552,8 @@
 				A7EB84D6168B9B1300D686B7 /* DTHTMLElementHR.h in Headers */,
 				A7EB84E6168C657100D686B7 /* DTHTMLElementLI.h in Headers */,
 				A7EB853A168FA33500D686B7 /* DTHTMLElementStylesheet.h in Headers */,
+				7F6AAF5B169272F600C8892F /* DTHTMLElementBorderStyle.h in Headers */,
+				7F6AAF671692730F00C8892F /* DTHTMLElementBorderAttributes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1574,6 +1609,8 @@
 				A7EB84D7168B9B1300D686B7 /* DTHTMLElementHR.h in Headers */,
 				A7EB84E7168C657100D686B7 /* DTHTMLElementLI.h in Headers */,
 				A7EB853B168FA33500D686B7 /* DTHTMLElementStylesheet.h in Headers */,
+				7F6AAF5C169272F600C8892F /* DTHTMLElementBorderStyle.h in Headers */,
+				7F6AAF681692730F00C8892F /* DTHTMLElementBorderAttributes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1611,6 +1648,8 @@
 				A7EB84CE168B9A8500D686B7 /* DTHTMLElementAttachment.h in Headers */,
 				A7EB84D8168B9B1300D686B7 /* DTHTMLElementHR.h in Headers */,
 				A7EB84E8168C657100D686B7 /* DTHTMLElementLI.h in Headers */,
+				7F6AAF5D169272F600C8892F /* DTHTMLElementBorderStyle.h in Headers */,
+				7F6AAF691692730F00C8892F /* DTHTMLElementBorderAttributes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1905,6 +1944,7 @@
 				A7D63CDA1611B9AC00D4712A /* Default-568h@2x.png in Resources */,
 				A72418171678BACE001362C4 /* iOS6.html in Resources */,
 				A7EB84FC168ED63A00D686B7 /* FontSizes.html in Resources */,
+				7F6AAF3F16926AB900C8892F /* borders.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2099,6 +2139,8 @@
 				A7EB84D9168B9B1300D686B7 /* DTHTMLElementHR.m in Sources */,
 				A7EB84E9168C657100D686B7 /* DTHTMLElementLI.m in Sources */,
 				A7EB853D168FA33500D686B7 /* DTHTMLElementStylesheet.m in Sources */,
+				7F6AAF5E169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */,
+				7F6AAF6A1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2153,6 +2195,8 @@
 				A7EB84EA168C657100D686B7 /* DTHTMLElementLI.m in Sources */,
 				A7EB8536168F336200D686B7 /* DTHTMLElementAttachment.m in Sources */,
 				A7EB853E168FA33500D686B7 /* DTHTMLElementStylesheet.m in Sources */,
+				7F6AAF5F169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */,
+				7F6AAF6B1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2210,6 +2254,8 @@
 				A7EB84EB168C657100D686B7 /* DTHTMLElementLI.m in Sources */,
 				A7EB8535168F336100D686B7 /* DTHTMLElementAttachment.m in Sources */,
 				A7EB853F168FA33500D686B7 /* DTHTMLElementStylesheet.m in Sources */,
+				7F6AAF60169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */,
+				7F6AAF6C1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2251,6 +2297,8 @@
 				A7EB84EC168C657100D686B7 /* DTHTMLElementLI.m in Sources */,
 				A7EB8534168F336000D686B7 /* DTHTMLElementAttachment.m in Sources */,
 				A7EB8540168FA33500D686B7 /* DTHTMLElementStylesheet.m in Sources */,
+				7F6AAF61169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */,
+				7F6AAF6D1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2304,6 +2352,8 @@
 				A7EB84DB168B9B1300D686B7 /* DTHTMLElementHR.m in Sources */,
 				A7EB84ED168C657100D686B7 /* DTHTMLElementLI.m in Sources */,
 				A7EB8541168FA33500D686B7 /* DTHTMLElementStylesheet.m in Sources */,
+				7F6AAF62169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */,
+				7F6AAF6E1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2343,6 +2393,8 @@
 				A7EB84D2168B9A8500D686B7 /* DTHTMLElementAttachment.m in Sources */,
 				A7EB84DC168B9B1300D686B7 /* DTHTMLElementHR.m in Sources */,
 				A7EB84EE168C657100D686B7 /* DTHTMLElementLI.m in Sources */,
+				7F6AAF63169272F600C8892F /* DTHTMLElementBorderStyle.m in Sources */,
+				7F6AAF6F1692730F00C8892F /* DTHTMLElementBorderAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

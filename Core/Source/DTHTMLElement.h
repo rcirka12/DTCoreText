@@ -10,6 +10,7 @@
 @class DTCoreTextFontDescriptor;
 @class DTTextAttachment;
 @class DTCSSListStyle;
+@class DTHTMLElementBorderStyle;
 @class DTColor;
 
 
@@ -56,6 +57,7 @@
 	
 	DTHTMLElementDisplayStyle _displayStyle;
 	DTHTMLElementFloatStyle _floatStyle;
+	DTHTMLElementBorderStyle* _borderStyle;
 	
 	BOOL _isColorInherited;
 	
@@ -89,6 +91,7 @@
 @property (nonatomic, assign) NSInteger headerLevel;
 @property (nonatomic, assign) DTHTMLElementDisplayStyle displayStyle;
 @property (nonatomic, readonly) DTHTMLElementFloatStyle floatStyle;
+@property (nonatomic, strong) DTHTMLElementBorderStyle* borderStyle;
 @property (nonatomic, assign) BOOL isColorInherited;
 @property (nonatomic, assign) BOOL preserveNewlines;
 @property (nonatomic, assign) DTHTMLElementFontVariant fontVariant;

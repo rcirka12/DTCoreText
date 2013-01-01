@@ -36,6 +36,7 @@
 #import "NSAttributedString+SmallCaps.h"
 #import "NSAttributedString+DTCoreText.h"
 #import "DTHTMLAttributedStringBuilder.h"
+#import "DTHTMLElementBorderStyle.h"
 
 // parsing classes
 #import "DTHTMLParserNode.h"

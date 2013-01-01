@@ -44,6 +44,7 @@ extern NSString * const DTShadowsAttribute;
 extern NSString * const DTHorizontalRuleStyleAttribute;
 extern NSString * const DTTextBlocksAttribute;
 extern NSString * const DTFieldAttribute;
+extern NSString * const DTBorderAttribute;
 
 // iOS 6 compatibility
 extern BOOL ___useiOS6Attributes;

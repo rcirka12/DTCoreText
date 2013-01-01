@@ -14,6 +14,7 @@
 #import "DTHTMLElementLI.h"
 #import "DTHTMLElementStylesheet.h"
 #import "DTHTMLElementText.h"
+#import "DTHTMLElementBorderStyle.h"
 
 @interface DTHTMLElement ()
 
@@ -279,6 +280,12 @@ NSDictionary *_classesForNames = nil;
 	{
 		[tmpDict setObject:_paragraphStyle.textBlocks forKey:DTTextBlocksAttribute];
 	}
+	else {
+		if (self.borderStyle) {
+			[tmpDict setObject:_borderStyle forKey:DTBorderAttribute];
+		}
+	}
+	
 	return tmpDict;
 }
 
@@ -489,6 +496,9 @@ NSDictionary *_classesForNames = nil;
 				}
 			}
 		}
+	}
+	else if (self.borderStyle) {
+		[tmpString addAttribute:(id)DTBorderAttribute value:self.borderStyle range:NSMakeRange(0, tmpString.length)];
 	}
 		
 	return tmpString;
@@ -941,6 +951,25 @@ NSDictionary *_classesForNames = nil;
 			// nothing to do
 		}
 	}
+	NSString* borderString = [styles objectForKey:@"border"];
+	borderString = [borderString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	
+	NSArray* borderComponents = [borderString componentsSeparatedByString:@" "];
+	if (borderComponents.count == 3) {
+		self.borderStyle = [[DTHTMLElementBorderStyle alloc] init];
+		self.borderStyle.all = [[DTHTMLElementBorderAttributes alloc] init];
+		
+		// Border Width
+		NSString* borderWidthString = [borderComponents objectAtIndex:0];
+		borderWidthString = [borderWidthString stringByReplacingOccurrencesOfString:@"px" withString:@""];
+		self.borderStyle.all.width = [borderWidthString floatValue];
+		
+		// Border Style
+		self.borderStyle.all.style = [borderComponents objectAtIndex:1];
+		
+		// Border Color
+		self.borderStyle.all.color = [DTColor colorWithHTMLName:[borderComponents objectAtIndex:2]];
+	}
 	
 	DTEdgeInsets padding = {0,0,0,0};
 	
@@ -952,7 +981,7 @@ NSDictionary *_classesForNames = nil;
 		self.paragraphStyle.listIndent = [webkitPaddingStart pixelSizeOfCSSMeasureRelativeToCurrentTextSize:self.fontDescriptor.pointSize textScale:_textScale];
 	}
 	
-	BOOL needsTextBlock = (_backgroundColor!=nil);
+	BOOL needsTextBlock = (self.backgroundColor || self.borderStyle);
 	
 	NSString *paddingString = [styles objectForKey:@"padding"];
 	
@@ -1052,9 +1081,14 @@ NSDictionary *_classesForNames = nil;
 				newBlocks = [NSArray arrayWithObject:newBlock];
 			}
 			
+			if (self.borderStyle) {
+				newBlock.border = self.borderStyle;
+			}
+			
 			self.paragraphStyle.textBlocks = newBlocks;
 		}
 	}
+
 }
 
 - (NSDictionary *)styles
@@ -1252,6 +1286,7 @@ NSDictionary *_classesForNames = nil;
 @synthesize textScale = _textScale;
 @synthesize size = _size;
 @synthesize linkGUID = _linkGUID;
+@synthesize borderStyle = _borderStyle;
 
 @end
 

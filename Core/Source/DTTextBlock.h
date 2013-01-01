@@ -7,6 +7,7 @@
 //
 
 #import "DTCompatibility.h"
+#import "DTHTMLElementBorderStyle.h"
 
 /**
  Class that represents a block of text with attributes like padding or a background color.
@@ -23,6 +24,11 @@
  The background color to paint behind the text in the receiver
  */
 @property (nonatomic, strong) DTColor *backgroundColor;
+
+/**
+ The border of the text block
+ */
+@property (nonatomic, strong) DTHTMLElementBorderStyle *border;
 
 
 @end

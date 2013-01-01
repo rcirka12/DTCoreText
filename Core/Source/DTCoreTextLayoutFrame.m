@@ -775,11 +775,23 @@ static BOOL _DTCoreTextLayoutFramesShouldDrawDebugFrames = NO;
 																	  }
 																  }
 																  
+																  if (oneBlock.border.all) {
+																	  DTHTMLElementBorderAttributes* borderStyle = oneBlock.border.all;
+																	  
+																	  //CGRect innerRect = frame;
+																	  CGContextSetStrokeColorWithColor(context, [borderStyle.color CGColor]);
+																	  CGContextSetLineWidth(context, borderStyle.width);
+																	  CGContextMoveToPoint(context, CGRectGetMinX(frame), CGRectGetMinY(frame));
+																	  CGContextAddLineToPoint(context, CGRectGetMaxX(frame), CGRectGetMinY(frame));
+																	  CGContextAddLineToPoint(context, CGRectGetMaxX(frame), CGRectGetMaxY(frame));
+																	  CGContextAddLineToPoint(context, CGRectGetMinX(frame), CGRectGetMaxY(frame));
+																	  CGContextClosePath(context);
+																	  CGContextStrokePath(context);
+																  }
+																  
 																  [handledBlocks addObject:oneBlock];
 															  }
 														  }
-														  
-														  
 													  }];
 	}
 	

@@ -40,6 +40,7 @@ NSString * const DTShadowsAttribute = @"DTShadows";
 NSString * const DTHorizontalRuleStyleAttribute = @"DTHorizontalRuleStyle";
 NSString * const DTTextBlocksAttribute = @"DTTextBlocks";
 NSString * const DTFieldAttribute = @"DTField";
+NSString * const DTBorderAttribute = @"DTBorder";
 
 // iOS 6 compatibility
 
