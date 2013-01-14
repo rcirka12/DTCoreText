@@ -43,7 +43,6 @@
 	
 	NSString *_linkGUID;
 	
-	BOOL _tagContentInvisible;
 	BOOL _strikeOut;
 	NSInteger _superscriptStyle;
 	
@@ -62,6 +61,7 @@
 	BOOL _isColorInherited;
 	
 	BOOL _preserveNewlines;
+	BOOL _containsAppleConvertedSpace;
 	
 	DTHTMLElementFontVariant _fontVariant;
 	
@@ -85,7 +85,6 @@
 @property (nonatomic, copy) NSString *beforeContent;
 @property (nonatomic, copy) NSArray *shadows;
 @property (nonatomic, assign) CTUnderlineStyle underlineStyle;
-@property (nonatomic, assign) BOOL tagContentInvisible;
 @property (nonatomic, assign) BOOL strikeOut;
 @property (nonatomic, assign) NSInteger superscriptStyle;
 @property (nonatomic, assign) NSInteger headerLevel;
@@ -97,6 +96,7 @@
 @property (nonatomic, assign) DTHTMLElementFontVariant fontVariant;
 @property (nonatomic, assign) CGFloat textScale;
 @property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) BOOL containsAppleConvertedSpace;
 
 @property (nonatomic, assign) BOOL didOutput;
 
@@ -133,6 +133,11 @@
  Copies and inherits relevant attributes from the given parent element
  */
 - (void)inheritAttributesFromElement:(DTHTMLElement *)element;
+
+/**
+ Interprets the tag attributes for e.g. writing direction. Usually you would call this after inheritAttributesFromElement:.
+ */
+- (void)interpretAttributes;
 
 /**
  Returns the parent element. That's the same as the parent node but with adjusted type for convenience.
